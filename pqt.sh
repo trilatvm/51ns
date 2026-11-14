@@ -1,0 +1,60 @@
+#!/bin/sh
+exFAT="exfatprogs fatsort exfat-utils fuse-exfat"					# Extended File Allocation Table
+NTFS="ntfs-3g"						# New Technology File System
+FAT32="dosfstools fatresize fatsort"		# File Allocation Table 32-bit
+ZFS="zfs-linux zfs-lts zfsbootmenu"	# Zettabyte File System
+HFSplvs="hfsprogs apfs-fuse"			# Hierarchical File System Plus / Mac OS Extended)
+APFS="apfs-fuse apfsprogs"			# Apple File System
+ext4="e2fsprogs"					# Fourth Extended File System
+Btrfs="btrfs-progs ntfs2btrfs"		# BTR File System
+FS0="${exFAT} ${NTFS} ${FAT32} ${ZFS} ${HFSplvs} ${APFS} ${ext4} ${Btrfs}"
+gvfs="gvfs gvfs-afc gvfs-afp gvfs-cdda gvfs-devel gvfs-goa gvfs-gphoto2 gvfs-mtp gvfs-smb"
+FST="fdisk parted ${gvfs} usbtop"
+hdd="smartmontools testdisk udisks2 polkit elogind"
+par="par2 par2cmdline"
+FT0="tree mc nano rsync ${par}"
+FC0="zip unzip xz xz-utils bzip2"
+ST0="binutils coreutils cronutils moreutils mtools net-tools diffutils"
+ntp="ntp ntpsec ntpsec-ntpdate pps-tools gpsd gpsg-tools"
+iptables="iptables"
+fail2ban="fail2ban socklog-void"
+SNT="net-tools network-manager wpasupplicant nm-tray network-manager-gnome lxpanel lxpolkit aria2 wget yt-dlp ${ntp} ${iptables} ${fail2ban}"
+python="python3-full python3"
+pythonExt="python3-pip python3-setuptools python3-wheel python3-crcmod python3-cryptography python3-cryptography_vectors python3-ntplib python3-numexpr python3-numpy python3-numpy-stl python3-openssl"
+jre="default-jre openjdk8-jre openjdk17-jre"
+jdk="default-jdk openjdk8 openjdk17"
+java="${jdk} ${jre}"
+sql="postgresql-full"
+js="node nodejs npm"
+DEV="git octave ${python} ${pythonExt} ${java} ${sql} ${js}"
+CMP="base-devel bc bison flex perl python3 openssl-devel elfutils-devel uboot-mkimage ncurses-devel wget tar xz build-essential gcc automake cmake make dkms"
+firacode="font-fira-otf font-fira-ttf font-firacode"
+terminus="font-terminus font-termsyn grub-terminus terminus-font termsyn-font"
+FNT="${firacode} ${terminus} fontconfig fontconfig-doc fontforge fontmanager fontmatrix"
+bench="htop btop"
+plvs="qrencode stockfish qalculate bitcoin"
+MDA="cmus cmus-flac cmus-pulseaudio ffmpeg flac"
+audio="pavucontrol pulseaudio"
+cliAll="${FS0} ${FST} ${hdd} ${FT0} ${FC0} ${ST0} ${SNT} ${CMP} ${DEV} ${FNT} ${bench} ${plvs} ${MDA} ${audio}"
+
+C1="exfatprogs ntfs-3g dosfstools fatresize zfs-linux zfs-lts zfsbootmenu hfsprogs apfs-fuse apfsprogs e2fsprogs btrfs-progs ntfs2btrfs"
+C2="fdisk parted gvfs usbtop smartmontools testdisk udisks2"
+C3="tree mc nano rsync par2 par2cmdline zip unzip xz xz-utils bzip2 binutils coreutils cronutils moreutils mtools net-tools diffutils"
+C4="ntp ntpsec ntpsec-ntpdate pps-tools gpsd iptables fail2ban socklog-void network-manager wpasupplicant aria2 wget yt-dlp"
+C5="git octave python3-full python3 python3-pip python3-setuptools python3-wheel python3-crcmod python3-cryptography python3-openssl default-jre openjdk17-jre default-jdk openjdk17 postgresql-full node nodejs npm build-essential gcc automake cmake make dkms"
+C6="font-terminus font-termsyn grub-terminus htop btop qrencode stockfish qalculate bitcoin cmus ffmpeg flac pavucontrol pulseaudio"
+
+OBX="openbox feh jgmenu lxappearance-obconf obconf obconf-qt obmenu-generator tint2 xinit xorg xtools lightdm lightdm-gtk-greeter polkit-gnome dbus kmod kmon"
+ENT="gsmartcontrol xorg dbus network-manager-applet pcmanfm qpdfview viewnior x264 x265 gnome-disk-utility gparted mpv xterm lxterminal xarchiver"
+MUL="CubicSDR ImageMagick spek alsa-plugins-ffmpeg alsa-plugins-pulseaudio apulse gpredict gpsd-qt viciosCaligráficos mypaint pavucontrol-qt pulseaudio-equalizer-ladspa pulseaudio-qt pulseaudio-utils pulsemixer soundconverter vlc"
+DES="dia geany geany-editorconfig-plugin geany-plugins geany-plugins-extra python3-matplotlib python3-matplotlib-inline"
+OFF="LibreCAD librecad firefox-esr libreoffice cups cups-pdf tuxpaint tuxpaint-stamps"
+HRR="bitcoin-qt protontricks qalculate-qt wine-mono winetricks"
+
+G1="openbox feh jgmenu lxappearance-obconf obconf obconf-qt obmenu-generator tint2 xinit xorg xtools gsmartcontrol dbus network-manager-applet pcmanfm qpdfview viewnior x264 x265 gnome-disk-utility gparted mpv xterm lxterminal xarchiver"
+G2="CubicSDR ImageMagick spek alsa-plugins-ffmpeg alsa-plugins-pulseaudio apulse gpredict gpsd-qt mypaint pavucontrol-qt pulseaudio-equalizer-ladspa pulseaudio-qt pulseaudio-utils pulsemixer soundconverter vlc"
+G3="dia geany geany-editorconfig-plugin geany-plugins geany-plugins-extra python3-matplotlib python3-matplotlib-inline"
+G4="LibreCAD librecad firefox-esr libreoffice cups cups-pdf tuxpaint tuxpaint-stamps bitcoin-qt protontricks qalculate-qt wine-mono winetricks"
+
+CLI="$C1 $C2 $C3 $C4 $C5 $C6 $cliAll"
+GUI="$G1 $G2 $G3 $G4 $OBX $ENT $MUL $DES $OFF $HRR"
