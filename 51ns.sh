@@ -11,6 +11,7 @@
 . ./cfgX11.sh
 . ./cfgOBX.sh
 . ./cfgPLKT.sh
+. ./cfgXTERM.sh
 main() {
 	detectarSO
 	definirPaquetes
@@ -78,6 +79,7 @@ main() {
 	crearSvAll
 	configurarx11
 	configurarPolkit
+	configurarXter
 	
 	[ -f /proc/sys/vm/drop_caches ] && { sync; sudo sh -c "echo 3 > /proc/sys/vm/drop_caches" 2>/dev/null || true; }
 	tiempoFinal=$(cronometroFinalizar)

@@ -1,0 +1,44 @@
+PING 1.1.1.1 (1.1.1.1) 1024(1052) bytes of data.
+[1794722411.624301] 1032 bytes from 1.1.1.1: icmp_seq=1 ttl=53 time=11.9 ms
+[1794722412.634279] 1032 bytes from 1.1.1.1: icmp_seq=2 ttl=53 time=20.1 ms
+[1794722413.636427] 1032 bytes from 1.1.1.1: icmp_seq=3 ttl=53 time=20.3 ms
+[1794722414.630055] 1032 bytes from 1.1.1.1: icmp_seq=4 ttl=53 time=11.9 ms
+[1794722415.639634] 1032 bytes from 1.1.1.1: icmp_seq=5 ttl=53 time=19.8 ms
+
+--- 1.1.1.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4008ms
+rtt min/avg/max/mdev = 11.882/16.818/20.341/4.012 ms
+15 Nov 03:00:15 ntpd[8683]: ntpd 4.2.8p18@1.4062-o Wed Oct 21 14:59:55 UTC 2026 (1): Starting
+15 Nov 03:00:15 ntpd[8683]: Command line: ntpd -gq
+15 Nov 03:00:15 ntpd[8683]: ----------------------------------------------------
+15 Nov 03:00:15 ntpd[8683]: ntp-4 is maintained by Network Time Foundation,
+15 Nov 03:00:15 ntpd[8683]: Inc. (NTF), a non-profit 501(c)(3) public-benefit
+15 Nov 03:00:15 ntpd[8683]: corporation.  Support and training for ntp-4 are
+15 Nov 03:00:15 ntpd[8683]: available at https://www.nwtime.org/support
+15 Nov 03:00:15 ntpd[8683]: ----------------------------------------------------
+15 Nov 03:00:15 ntpd[8683]: DEBUG behavior is enabled - a violation of any diagnostic assertion will cause ntpd to abort
+15 Nov 03:00:15 ntpd[8683]: proto: precision = 1.458 usec (-19)
+15 Nov 03:00:15 ntpd[8683]: basedate set to 2026-10-09
+15 Nov 03:00:15 ntpd[8683]: gps base set to 2026-10-11 (week 2440)
+15 Nov 03:00:15 ntpd[8683]: initial drift restored to 6.578079
+15 Nov 03:00:23 ntpdate[8685]: adjust time server 195.176.26.215 offset -0.000006 sec
+15 Nov 03:00:29 ntpdate[8765]: adjust time server 132.163.97.2 offset +0.002124 sec
+15 Nov 03:00:35 ntpdate[8845]: adjust time server 200.0.184.233 offset +0.000584 sec
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
++ntp.metas.ch    .PZF.            1 u   13   64  377  234.053   +3.057   2.066
++ntp11.metas.ch  .PZF.            1 u   18   64  377  233.851   +2.880   3.132
+*ntp12.metas.ch  .PZF.            1 u   13   64  377  231.558   +2.849   3.208
++ntp13.metas.ch  .PZF.            1 u   11   64  377  234.835   +3.100   3.010
+-time-e-wwv.nist .NIST.           1 u   26   64  377  194.416   +4.544   1.804
+ 181.209.40.207  .INIT.          16 u    -   64    0    0.000   +0.000   0.000
++ntp.inti.gob.ar 10.3.2.89        2 u   23   64  377   14.099   -0.436   6.155
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
++195.176.26.215  .PZF.            1 u   15   64  377  234.053   +3.057   2.066
++195.176.26.204  .PZF.            1 u   20   64  377  233.851   +2.880   3.132
+*195.176.26.205  .PZF.            1 u   14   64  377  231.558   +2.849   3.208
++195.176.26.206  .PZF.            1 u   12   64  377  234.835   +3.100   3.010
+-132.163.97.6    .NIST.           1 u   27   64  377  194.416   +4.544   1.804
+ 181.209.40.207  .INIT.          16 u    -   64    0    0.000   +0.000   0.000
++200.0.184.233   10.3.2.89        2 u   23   64  377   14.099   -0.436   6.155
