@@ -16,7 +16,7 @@ crearSv(){ nmb="$1"; rta="/etc/sv/${nmb}";
 iniciarSv(){ nmb="$1"; sv start ${nmb}; verSv "${nmb}"; }
 reIniciarSv(){ nmb="$1"; sv restart ${nmb}; verSv "${nmb}"; }
 pararSv(){ nmb="$1"; sv stop ${nmb}; verSv "${nmb}"; }
-crearSvNTP() { pararSv "chronyd"; crearSv "ntpd"; }
+crearSvNTP() { pararSv "chronyd"; crearSv "ntpd";  crearSv "fake-hwclock"; }
 crearSvNET() { crearSv "iptables"; crearSv "fail2ban"; crearSv "NetworkManager"; }
 crearSvGUI() { crearSv "dbus"; crearSv "polkitd"; }
 crearSvAll() { crearSvNTP; crearSvNET; crearSvGUI; }

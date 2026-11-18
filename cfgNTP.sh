@@ -2,6 +2,7 @@
 # Provisionamiento NTP modular
 . ./imp.sh
 . ./cfgSV.sh
+. ./cfgFKCLCK.sh
 confNTPserver='
 server ntp.metas.ch iburst
 server ntp11.metas.ch
@@ -29,5 +30,6 @@ configurarNtp() {
 			execSudo sysrc ntpd_enable="YES" >/dev/null 2>&1
 			execSudo service ntpd restart >/dev/null 2>&1 || true ;;
 	esac
+	configurarFakeClock
 	crearSvNTP
 }
