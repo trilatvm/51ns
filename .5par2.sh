@@ -50,6 +50,8 @@ calcularNucleos() {
 	cantidadNucleos=$(printf "%s" "$cantidadNucleos" | tr -cd '0-9')
 	if [ -z "$cantidadNucleos" ] || [ "$cantidadNucleos" -lt 1 ]; then
 		cantidadNucleos=1
+	else
+		cantidadNucleos=$(( cantidadNucleos -1 ))
 	fi
 	printf "%s" "$cantidadNucleos"
 }
@@ -171,6 +173,7 @@ repararPar2Archivo() {
 			;;
 	esac
 }
+
 
 
 

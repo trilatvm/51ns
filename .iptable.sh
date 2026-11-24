@@ -101,3 +101,4 @@ preparar_persistencia() {
 aplicar "iptables"
 aplicar "ip6tables"
 
+

@@ -13,3 +13,4 @@ finalizarCronometro() { cronometroTranscurrido; }
 
 
 
+

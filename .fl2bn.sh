@@ -118,3 +118,4 @@ sudo systemctl status fail2ban.service
 Si el servicio ahora muestra el estado en verde como active (running), el problema quedó resuelto. ¿Podría ejecutar ahora el comando sudo fail2ban-client status sshd para confirmar que la jaula está monitoreando activamente el archivo de log?
 
 
+
